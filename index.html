@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Donations to Time</title>
+		<link href="https://fonts.googleapis.com/css?family=Cantarell&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="cramberblue.css">
+	</head>
+	<body>
+		<p>What is the starting duration of the marathon, in hours?</p>
+		<input type="number" id="marathonLength"></input><br>
+		<hr>
+		<div>
+			<input type="radio" name="donationHistory" id="allDonations" value="all" checked></input>
+			<label for="allDonations">Use entire donation history as added time.</label>
+		</div>
+		<div>
+			<input type="radio" name="donationHistory" id="onlyNewDonations" value="newOnly"></input>
+			<label for="onlyNewDonations">Only use donations during the countdown as added time.</label>
+		</div>
+		<hr>
+		<button id="startTimer" onclick="getStart(); countDown()">Start Timer</button>
+		<hr>
+		<div>
+			<table class="countdown">
+				<tr class="info">
+					<td colspan="4">Time Remaining:</td>
+				</tr>
+				<tr class="time">
+					<td id="hours"></td>
+					<td id="minutes"></td>
+					<td id="seconds"></td>
+				</tr>
+				<tr class="timeLabel">
+					<td>Hours</td>
+					<td>Minutes</td>
+					<td>Seconds</td>
+				</tr>
+				<tr class="info">
+					<td colspan="4">$1 equals 1 minute</td>
+				</tr>
+			</table>
+		</div>
+		<p>blah</p>
+		<script src="scripts.js"></script>
+	</body>
+</html>

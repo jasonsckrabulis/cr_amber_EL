@@ -1,0 +1,34 @@
+body{
+	background: lightgrey;
+	font-family: 'Cantarell', sans-serif;
+}
+.countdown{
+	text-align: center;
+	background: sandybrown;
+	border: 1px solid black;
+	padding: 6px;
+	box-shadow: inset 0 0 30px skyblue;
+}
+.info{
+	font-size: 80px;
+	color: skyblue;
+	text-shadow: -1px 1px 0 black,
+		1px 1px 0 black,
+		1px -1px 0 black,
+		-1px -1px 0 black;
+}
+.time{
+	font-size: 80px;
+	color: skyblue;
+	text-shadow: -1px 1px 0 black,
+		1px 1px 0 black,
+		1px -1px 0 black,
+		-1px -1px 0 black;
+}
+.timeLabel{
+	color: skyblue;
+	text-shadow: -1px 1px 0 black,
+		1px 1px 0 black,
+		1px -1px 0 black,
+		-1px -1px 0 black;
+}
