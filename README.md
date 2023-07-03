@@ -1,5 +1,5 @@
 
-## Extra Life Donate-athon Widget - Donations add time to countdown
+## Extra Life Donation Timer Widget - Donations add time to countdown
 
 ### Maintainer
 Jason Sckrabulis (zolloz89)
