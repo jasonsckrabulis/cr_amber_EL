@@ -46,7 +46,7 @@ Open `config.js` in your favorite text editor and edit the desired values
 
 Parameter | Description
 --- | ---
-`participantID` | Your Extra Life participantID. It's found as the 6 digits of your fundraising URL. Example: extra-life.org/index.cfm?fuseaction=donordrive.participant&participantID=*508911*
+`participantID` | Your Extra Life participantID. It's found as the 6 digits of your fundraising URL. Example: `extra-life.org/index.cfm?fuseaction=donordrive.participant&participantID=*508911*`
 `marathonStartLength` | The starting length of your marathon, in hours. Time will be added to this number.
 `dollarMultiplier` | The multiplier for calculating added time. Default is 1 ($1 * 1 = 1 minute added).
 `usePreviousDonations` | An option to include all previous donations as added time. Default is false. Example: if `marathonStartLength` = 0, then `usePreviousDonations` = true then gives you a starting marathon length based on your donation history.
