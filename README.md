@@ -53,7 +53,7 @@ Parameter | Description
 `usePreviousDonations` | An option to include all previous donations as added time. Default is false. Example: if `marathonStartLength` = 0, then `usePreviousDonations` = true then gives you a starting marathon length based on your donation history.
 `startDelay` | The length of time before the countdown actually starts once the page is loaded, in minutes.
 
-You can customize the style of the countdown in `style.css`. Default style inspired by [Extra Life Helper by Bread](https://github.com/breadweb/extralife-helper)
+You can customize the style of the countdown in `style.css`. Default style inspired by [Extra Life Helper by Bread](https://github.com/breadweb/extralife-helper).
 
 #### 3) Add widget to stream
 
