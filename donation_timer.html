@@ -1,47 +1,40 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Donations to Time</title>
-		<link href="https://fonts.googleapis.com/css?family=Cantarell&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="cramberblue.css">
+		<title>Extra Life Donate-athon</title>
+		<script src="config.js"></script>
+		<script src="script.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<p>What is the starting duration of the marathon, in hours?</p>
-		<input type="number" id="marathonLength"></input><br>
-		<hr>
-		<div>
-			<input type="radio" name="donationHistory" id="allDonations" value="all" checked></input>
-			<label for="allDonations">Use entire donation history as added time.</label>
-		</div>
-		<div>
-			<input type="radio" name="donationHistory" id="onlyNewDonations" value="newOnly"></input>
-			<label for="onlyNewDonations">Only use donations during the countdown as added time.</label>
-		</div>
-		<hr>
-		<button id="startTimer" onclick="getStart(); countDown(); getAddedTime();">Start Timer</button>
-		<hr>
 		<div>
 			<table class="countdown">
 				<tr class="info">
 					<td colspan="4">Time Remaining:</td>
 				</tr>
 				<tr class="time">
-					<td id="hours"></td>
-					<td id="minutes"></td>
-					<td id="seconds"></td>
-				</tr>
-				<tr class="timeLabel">
-					<td>Hours</td>
-					<td>Minutes</td>
-					<td>Seconds</td>
+					<td id="displayTimer"></td>
 				</tr>
 				<tr class="info">
-					<td colspan="4">$1 equals 1 minute</td>
+					<td colspan="4">$1 equals <span id="multiply"></span> minute<span id="plural"></span></td>
 				</tr>
 			</table>
 		</div>
-		<p>Read the included README.txt for common problems.</p>
-		<p>If this has helped you in any way, please consider donating to my Extra Life fundraising page at bit.ly/jasonel.</p>
-		<script src="scripts.js"></script>
 	</body>
+	<script>
+		document.getElementById("multiply").innerHTML = config.dollarMultiplier.toString();
+		if (config.dollarMultiplier == 1){
+			document.getElementById("plural").innerHTML = "";
+		} else{
+			document.getElementById("plural").innerHTML = "s";
+		}
+		window.onload = function(){
+			setTimeout(function(){
+				getStart();
+				countDown();
+				getAddedTime();
+			},(config.startDelay*60*1000));
+		}
+	</script>
 </html>
