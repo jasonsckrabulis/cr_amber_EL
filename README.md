@@ -24,8 +24,7 @@ Submit any issues for this repository [here](https://github.com/jasonsckrabulis/
 ### Repository contents
 
 * README.md  
-* font  
-   Folder containing fonts required
+* fonts  
    * `LetsGoDigitalRegular.ttf`
 * `config.js`
 * `donation_timer.html`
