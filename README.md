@@ -1,5 +1,7 @@
 
-## Extra Life Donation Timer Widget - Donations add time to countdown
+## Extra Life Donation Timer Widget
+
+Donations to your Extra Life fundraising page can now add time to a countdown!
 
 ### Maintainer
 Jason Sckrabulis (zolloz89)
@@ -31,6 +33,12 @@ Submit any issues for this repository [here](https://github.com/jasonsckrabulis/
 * `LICENSE.txt`
 * `script.js`
 * `style.css`
+
+---
+
+### Summary
+
+
 
 ---
 
